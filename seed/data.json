@@ -1,0 +1,840 @@
+{
+  "$comment": "Datos demo cargados en la primera instalación por seed.php. Edita este archivo para adaptar la plantilla (usuarios, cursos, actividades). Mantén USUARIOS.md sincronizado.",
+  "site_config": {
+    "enablecompletion": 1
+  },
+  "category": {
+    "name": "Programación",
+    "idnumber": "PROG",
+    "description": "<p>Cursos de programación de demostración.</p>"
+  },
+  "users": [
+    {
+      "username": "gestor",
+      "password": "Gestor#2026",
+      "firstname": "Sofía",
+      "lastname": "Paredes",
+      "email": "gestor@example.com",
+      "system_role": "manager",
+      "description": "Gestora de la plataforma (rol manager en todo el sitio)."
+    },
+    {
+      "username": "prof.python",
+      "password": "Profesor#2026",
+      "firstname": "Laura",
+      "lastname": "Méndez",
+      "email": "prof.python@example.com"
+    },
+    {
+      "username": "prof.javascript",
+      "password": "Profesor#2026",
+      "firstname": "Diego",
+      "lastname": "Herrera",
+      "email": "prof.javascript@example.com"
+    },
+    {
+      "username": "prof.java",
+      "password": "Profesor#2026",
+      "firstname": "Valeria",
+      "lastname": "Ortiz",
+      "email": "prof.java@example.com"
+    },
+    {
+      "username": "prof.sql",
+      "password": "Profesor#2026",
+      "firstname": "Andrés",
+      "lastname": "Castillo",
+      "email": "prof.sql@example.com"
+    },
+    {
+      "username": "prof.git",
+      "password": "Profesor#2026",
+      "firstname": "Camila",
+      "lastname": "Rojas",
+      "email": "prof.git@example.com"
+    },
+    {
+      "username": "ayudante",
+      "password": "Profesor#2026",
+      "firstname": "Mateo",
+      "lastname": "Vargas",
+      "email": "ayudante@example.com",
+      "description": "Profesor sin permiso de edición en todos los cursos."
+    },
+    {
+      "username": "est01",
+      "password": "Estudiante#2026",
+      "firstname": "Ana",
+      "lastname": "Torres",
+      "email": "est01@example.com"
+    },
+    {
+      "username": "est02",
+      "password": "Estudiante#2026",
+      "firstname": "Bruno",
+      "lastname": "Salazar",
+      "email": "est02@example.com"
+    },
+    {
+      "username": "est03",
+      "password": "Estudiante#2026",
+      "firstname": "Carla",
+      "lastname": "Mejía",
+      "email": "est03@example.com"
+    },
+    {
+      "username": "est04",
+      "password": "Estudiante#2026",
+      "firstname": "Daniel",
+      "lastname": "Ruiz",
+      "email": "est04@example.com"
+    },
+    {
+      "username": "est05",
+      "password": "Estudiante#2026",
+      "firstname": "Elena",
+      "lastname": "Guzmán",
+      "email": "est05@example.com"
+    },
+    {
+      "username": "est06",
+      "password": "Estudiante#2026",
+      "firstname": "Felipe",
+      "lastname": "Navarro",
+      "email": "est06@example.com"
+    },
+    {
+      "username": "est07",
+      "password": "Estudiante#2026",
+      "firstname": "Gabriela",
+      "lastname": "Paz",
+      "email": "est07@example.com"
+    },
+    {
+      "username": "est08",
+      "password": "Estudiante#2026",
+      "firstname": "Héctor",
+      "lastname": "Molina",
+      "email": "est08@example.com"
+    },
+    {
+      "username": "est09",
+      "password": "Estudiante#2026",
+      "firstname": "Isabel",
+      "lastname": "Cordero",
+      "email": "est09@example.com"
+    },
+    {
+      "username": "est10",
+      "password": "Estudiante#2026",
+      "firstname": "Javier",
+      "lastname": "León",
+      "email": "est10@example.com"
+    },
+    {
+      "username": "est11",
+      "password": "Estudiante#2026",
+      "firstname": "Karina",
+      "lastname": "Vega",
+      "email": "est11@example.com"
+    },
+    {
+      "username": "est12",
+      "password": "Estudiante#2026",
+      "firstname": "Luis",
+      "lastname": "Andrade",
+      "email": "est12@example.com"
+    },
+    {
+      "username": "est13",
+      "password": "Estudiante#2026",
+      "firstname": "María",
+      "lastname": "Cevallos",
+      "email": "est13@example.com"
+    },
+    {
+      "username": "est14",
+      "password": "Estudiante#2026",
+      "firstname": "Nicolás",
+      "lastname": "Ibarra",
+      "email": "est14@example.com"
+    },
+    {
+      "username": "est15",
+      "password": "Estudiante#2026",
+      "firstname": "Olga",
+      "lastname": "Pineda",
+      "email": "est15@example.com"
+    },
+    {
+      "username": "est16",
+      "password": "Estudiante#2026",
+      "firstname": "Pablo",
+      "lastname": "Rivas",
+      "email": "est16@example.com"
+    },
+    {
+      "username": "est17",
+      "password": "Estudiante#2026",
+      "firstname": "Rosa",
+      "lastname": "Delgado",
+      "email": "est17@example.com"
+    },
+    {
+      "username": "est18",
+      "password": "Estudiante#2026",
+      "firstname": "Santiago",
+      "lastname": "Fuentes",
+      "email": "est18@example.com"
+    },
+    {
+      "username": "est19",
+      "password": "Estudiante#2026",
+      "firstname": "Tatiana",
+      "lastname": "Aguirre",
+      "email": "est19@example.com"
+    },
+    {
+      "username": "est20",
+      "password": "Estudiante#2026",
+      "firstname": "Víctor",
+      "lastname": "Benítez",
+      "email": "est20@example.com"
+    }
+  ],
+  "teaching_assistant": "ayudante",
+  "courses": [
+    {
+      "fullname": "Python desde cero",
+      "shortname": "PY101",
+      "idnumber": "PY101",
+      "summary": "<p>Aprende a programar con Python: sintaxis, tipos de datos, control de flujo, funciones y módulos.</p>",
+      "teacher": "prof.python",
+      "students": [
+        "est01",
+        "est02",
+        "est03",
+        "est04",
+        "est05",
+        "est06",
+        "est07",
+        "est08",
+        "est09",
+        "est10",
+        "est11",
+        "est12"
+      ],
+      "sections": [
+        {
+          "name": "Introducción y entorno",
+          "summary": "<p>Instalación de Python, el intérprete y tu primer programa.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Bienvenida al curso",
+              "intro": "<p>Presentación del curso y metodología.</p>",
+              "content": "<h3>¡Bienvenido/a!</h3><p>En este curso aprenderás los fundamentos de Python paso a paso.</p><pre><code>print(\"Hola, mundo\")</code></pre>"
+            },
+            {
+              "type": "url",
+              "name": "Documentación oficial de Python",
+              "intro": "<p>Referencia oficial en español.</p>",
+              "externalurl": "https://docs.python.org/es/3/"
+            },
+            {
+              "type": "forum",
+              "name": "Foro de dudas",
+              "intro": "<p>Publica aquí tus preguntas sobre el curso.</p>",
+              "discussion": {
+                "subject": "Preséntate y cuéntanos tu experiencia",
+                "message": "<p>Hola a todos, preséntense: ¿han programado antes? ¿qué esperan del curso?</p>"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Variables, tipos y operadores",
+          "summary": "<p>int, float, str, bool y operadores básicos.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Tipos de datos básicos",
+              "intro": "<p>Resumen de los tipos primitivos.</p>",
+              "content": "<p>Python es de tipado dinámico:</p><pre><code>edad = 30          # int\naltura = 1.75      # float\nnombre = \"Ana\"     # str\nactivo = True      # bool\nprint(type(edad))</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Control de flujo",
+          "summary": "<p>Condicionales y bucles.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "if, for y while",
+              "intro": "<p>Estructuras de control.</p>",
+              "content": "<pre><code>for n in range(1, 6):\n    if n % 2 == 0:\n        print(n, \"es par\")\n    else:\n        print(n, \"es impar\")</code></pre>"
+            },
+            {
+              "type": "assign",
+              "name": "Ejercicio: FizzBuzz",
+              "intro": "<p>Escribe un programa que imprima los números del 1 al 100, pero \"Fizz\" para múltiplos de 3, \"Buzz\" para múltiplos de 5 y \"FizzBuzz\" para múltiplos de ambos. Sube tu archivo <code>.py</code> o pega el código.</p>",
+              "duedays": 14
+            }
+          ]
+        },
+        {
+          "name": "Funciones y módulos",
+          "summary": "<p>Definir funciones, parámetros, retorno e importación de módulos.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Funciones en Python",
+              "intro": "<p>Cómo reutilizar código.</p>",
+              "content": "<pre><code>def saludar(nombre: str) -&gt; str:\n    return f\"Hola, {nombre}\"\n\nimport math\nprint(saludar(\"Luis\"), math.sqrt(16))</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Evaluación",
+          "summary": "<p>Comprueba lo aprendido.</p>",
+          "activities": [
+            {
+              "type": "quiz",
+              "name": "Cuestionario: fundamentos de Python",
+              "intro": "<p>Responde verdadero o falso.</p>",
+              "questions": [
+                {
+                  "text": "En Python la indentación forma parte de la sintaxis.",
+                  "answer": true,
+                  "feedback": "La indentación delimita los bloques de código."
+                },
+                {
+                  "text": "<code>type(3.0)</code> devuelve <code>int</code>.",
+                  "answer": false,
+                  "feedback": "Devuelve <code>float</code>."
+                },
+                {
+                  "text": "<code>def</code> se usa para definir funciones.",
+                  "answer": true,
+                  "feedback": "Correcto: <code>def nombre(...):</code>."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fullname": "JavaScript moderno",
+      "shortname": "JS101",
+      "idnumber": "JS101",
+      "summary": "<p>JavaScript actual (ES2015+): variables, funciones flecha, módulos, promesas y async/await.</p>",
+      "teacher": "prof.javascript",
+      "students": [
+        "est05",
+        "est06",
+        "est07",
+        "est08",
+        "est09",
+        "est10",
+        "est11",
+        "est12",
+        "est13",
+        "est14"
+      ],
+      "sections": [
+        {
+          "name": "Introducción",
+          "summary": "<p>JavaScript en el navegador y en Node.js.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Bienvenida al curso",
+              "intro": "<p>Objetivos del curso.</p>",
+              "content": "<p>Trabajaremos con JavaScript moderno en el navegador y en Node.js.</p><pre><code>console.log(\"Hola, mundo\");</code></pre>"
+            },
+            {
+              "type": "url",
+              "name": "MDN Web Docs",
+              "intro": "<p>La referencia de JavaScript.</p>",
+              "externalurl": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+            },
+            {
+              "type": "forum",
+              "name": "Foro de dudas",
+              "intro": "<p>Preguntas y respuestas del curso.</p>",
+              "discussion": {
+                "subject": "¿Qué editor usan?",
+                "message": "<p>Compartan qué editor o IDE usan y por qué.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Variables y funciones",
+          "summary": "<p>let, const y funciones flecha.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "let, const y funciones flecha",
+              "intro": "<p>Sintaxis moderna.</p>",
+              "content": "<pre><code>const PI = 3.1416;\nlet contador = 0;\nconst sumar = (a, b) =&gt; a + b;\nconsole.log(sumar(2, 3));</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Arreglos y objetos",
+          "summary": "<p>map, filter, reduce y desestructuración.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Métodos de arreglos",
+              "intro": "<p>Programación funcional con arreglos.</p>",
+              "content": "<pre><code>const nums = [1, 2, 3, 4];\nconst pares = nums.filter(n =&gt; n % 2 === 0);\nconst dobles = nums.map(n =&gt; n * 2);\nconst total = nums.reduce((acc, n) =&gt; acc + n, 0);</code></pre>"
+            },
+            {
+              "type": "assign",
+              "name": "Ejercicio: lista de tareas",
+              "intro": "<p>Crea un pequeño programa que gestione una lista de tareas (agregar, completar, listar) usando arreglos y objetos.</p>",
+              "duedays": 14
+            }
+          ]
+        },
+        {
+          "name": "Asincronía",
+          "summary": "<p>Promesas, fetch y async/await.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "async / await",
+              "intro": "<p>Código asíncrono legible.</p>",
+              "content": "<pre><code>async function obtenerUsuario(id) {\n  const res = await fetch(`https://api.example.com/users/${id}`);\n  if (!res.ok) throw new Error(\"Error HTTP\");\n  return res.json();\n}</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Evaluación",
+          "summary": "<p>Comprueba lo aprendido.</p>",
+          "activities": [
+            {
+              "type": "quiz",
+              "name": "Cuestionario: JavaScript moderno",
+              "intro": "<p>Responde verdadero o falso.</p>",
+              "questions": [
+                {
+                  "text": "Una variable declarada con <code>const</code> no puede reasignarse.",
+                  "answer": true,
+                  "feedback": "<code>const</code> impide la reasignación."
+                },
+                {
+                  "text": "<code>==</code> y <code>===</code> se comportan exactamente igual.",
+                  "answer": false,
+                  "feedback": "<code>===</code> no realiza conversión de tipos."
+                },
+                {
+                  "text": "<code>await</code> solo puede usarse dentro de funciones <code>async</code> (o en módulos).",
+                  "answer": true,
+                  "feedback": "Correcto."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fullname": "Java y Programación Orientada a Objetos",
+      "shortname": "JAVA101",
+      "idnumber": "JAVA101",
+      "summary": "<p>Fundamentos de Java y de la programación orientada a objetos: clases, herencia, interfaces y colecciones.</p>",
+      "teacher": "prof.java",
+      "students": [
+        "est09",
+        "est10",
+        "est11",
+        "est12",
+        "est13",
+        "est14",
+        "est15",
+        "est16",
+        "est17",
+        "est18"
+      ],
+      "sections": [
+        {
+          "name": "Introducción a Java",
+          "summary": "<p>JDK, compilación y la JVM.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Bienvenida al curso",
+              "intro": "<p>Qué aprenderás.</p>",
+              "content": "<p>Instala un JDK (21 o superior) y compila tu primer programa.</p><pre><code>public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hola, mundo\");\n    }\n}</code></pre>"
+            },
+            {
+              "type": "url",
+              "name": "Documentación de Java SE",
+              "intro": "<p>Referencia oficial de la API.</p>",
+              "externalurl": "https://docs.oracle.com/en/java/javase/"
+            },
+            {
+              "type": "forum",
+              "name": "Foro de dudas",
+              "intro": "<p>Preguntas sobre Java y POO.</p>",
+              "discussion": {
+                "subject": "Problemas instalando el JDK",
+                "message": "<p>Si tienen problemas con la instalación del JDK o la variable JAVA_HOME, coméntenlo aquí.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Clases y objetos",
+          "summary": "<p>Atributos, métodos, constructores y encapsulamiento.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Clases y objetos",
+              "intro": "<p>La base de la POO.</p>",
+              "content": "<pre><code>public class Cuenta {\n    private double saldo;\n\n    public void depositar(double monto) {\n        if (monto &lt;= 0) throw new IllegalArgumentException(\"Monto inválido\");\n        saldo += monto;\n    }\n\n    public double getSaldo() { return saldo; }\n}</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Herencia e interfaces",
+          "summary": "<p>Herencia, polimorfismo e interfaces.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Herencia y polimorfismo",
+              "intro": "<p>Reutilización y abstracción.</p>",
+              "content": "<pre><code>interface Figura { double area(); }\n\nrecord Circulo(double r) implements Figura {\n    public double area() { return Math.PI * r * r; }\n}</code></pre>"
+            },
+            {
+              "type": "assign",
+              "name": "Ejercicio: sistema de biblioteca",
+              "intro": "<p>Modela una biblioteca con las clases <code>Libro</code>, <code>Socio</code> y <code>Prestamo</code>. Sube tu proyecto comprimido o el enlace a tu repositorio.</p>",
+              "duedays": 21
+            }
+          ]
+        },
+        {
+          "name": "Colecciones",
+          "summary": "<p>List, Map, Set y streams.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Colecciones y streams",
+              "intro": "<p>Trabajo con colecciones.</p>",
+              "content": "<pre><code>List&lt;String&gt; nombres = List.of(\"Ana\", \"Luis\", \"Eva\");\nList&lt;String&gt; conA = nombres.stream()\n    .filter(n -&gt; n.startsWith(\"A\"))\n    .toList();</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Evaluación",
+          "summary": "<p>Comprueba lo aprendido.</p>",
+          "activities": [
+            {
+              "type": "quiz",
+              "name": "Cuestionario: Java y POO",
+              "intro": "<p>Responde verdadero o falso.</p>",
+              "questions": [
+                {
+                  "text": "En Java una clase puede heredar de varias clases a la vez.",
+                  "answer": false,
+                  "feedback": "Java solo permite herencia simple de clases; se usan interfaces para lo demás."
+                },
+                {
+                  "text": "El encapsulamiento consiste en ocultar el estado interno de un objeto.",
+                  "answer": true,
+                  "feedback": "Correcto."
+                },
+                {
+                  "text": "<code>String</code> es un tipo primitivo en Java.",
+                  "answer": false,
+                  "feedback": "<code>String</code> es una clase."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fullname": "Bases de datos con SQL",
+      "shortname": "SQL101",
+      "idnumber": "SQL101",
+      "summary": "<p>Diseño de bases de datos relacionales y consultas SQL con PostgreSQL.</p>",
+      "teacher": "prof.sql",
+      "students": [
+        "est13",
+        "est14",
+        "est15",
+        "est16",
+        "est17",
+        "est18",
+        "est19",
+        "est20",
+        "est01",
+        "est02"
+      ],
+      "sections": [
+        {
+          "name": "Introducción a las bases de datos",
+          "summary": "<p>Modelo relacional, tablas y claves.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Bienvenida al curso",
+              "intro": "<p>Objetivos.</p>",
+              "content": "<p>Usaremos PostgreSQL para practicar SQL.</p>"
+            },
+            {
+              "type": "url",
+              "name": "Documentación de PostgreSQL",
+              "intro": "<p>Manual oficial.</p>",
+              "externalurl": "https://www.postgresql.org/docs/"
+            },
+            {
+              "type": "forum",
+              "name": "Foro de dudas",
+              "intro": "<p>Preguntas sobre SQL.</p>",
+              "discussion": {
+                "subject": "Comparte tu consulta más útil",
+                "message": "<p>¿Cuál es la consulta SQL que más usan en su trabajo o proyectos?</p>"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Consultas SELECT",
+          "summary": "<p>Filtrado, orden y funciones de agregación.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "SELECT, WHERE y GROUP BY",
+              "intro": "<p>Consultas básicas.</p>",
+              "content": "<pre><code>SELECT pais, COUNT(*) AS total\nFROM clientes\nWHERE activo = true\nGROUP BY pais\nORDER BY total DESC;</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "JOINs",
+          "summary": "<p>Combinar información de varias tablas.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Tipos de JOIN",
+              "intro": "<p>INNER, LEFT, RIGHT y FULL.</p>",
+              "content": "<pre><code>SELECT p.id, c.nombre, p.total\nFROM pedidos p\nINNER JOIN clientes c ON c.id = p.cliente_id;</code></pre>"
+            },
+            {
+              "type": "assign",
+              "name": "Ejercicio: modelo de una tienda",
+              "intro": "<p>Diseña el modelo entidad-relación de una tienda en línea y escribe las sentencias <code>CREATE TABLE</code> y 5 consultas de ejemplo.</p>",
+              "duedays": 14
+            }
+          ]
+        },
+        {
+          "name": "Diseño y normalización",
+          "summary": "<p>Formas normales, índices y transacciones.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Normalización",
+              "intro": "<p>1FN, 2FN y 3FN.</p>",
+              "content": "<p>La normalización reduce la redundancia y evita anomalías de actualización.</p><pre><code>CREATE INDEX idx_pedidos_cliente ON pedidos (cliente_id);</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Evaluación",
+          "summary": "<p>Comprueba lo aprendido.</p>",
+          "activities": [
+            {
+              "type": "quiz",
+              "name": "Cuestionario: SQL",
+              "intro": "<p>Responde verdadero o falso.</p>",
+              "questions": [
+                {
+                  "text": "<code>LEFT JOIN</code> devuelve todas las filas de la tabla izquierda.",
+                  "answer": true,
+                  "feedback": "Correcto, aunque no haya coincidencia en la derecha."
+                },
+                {
+                  "text": "<code>WHERE</code> puede filtrar resultados de funciones de agregación.",
+                  "answer": false,
+                  "feedback": "Para eso se usa <code>HAVING</code>."
+                },
+                {
+                  "text": "Una clave primaria puede contener valores NULL.",
+                  "answer": false,
+                  "feedback": "Una clave primaria es única y no nula."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fullname": "Git y GitHub",
+      "shortname": "GIT101",
+      "idnumber": "GIT101",
+      "summary": "<p>Control de versiones con Git y trabajo colaborativo en GitHub: ramas, pull requests y flujos de trabajo.</p>",
+      "teacher": "prof.git",
+      "students": [
+        "est01",
+        "est03",
+        "est05",
+        "est07",
+        "est09",
+        "est11",
+        "est13",
+        "est15",
+        "est17",
+        "est19"
+      ],
+      "sections": [
+        {
+          "name": "Introducción al control de versiones",
+          "summary": "<p>¿Qué es Git y por qué usarlo?</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Bienvenida al curso",
+              "intro": "<p>Objetivos.</p>",
+              "content": "<p>Configura Git en tu equipo:</p><pre><code>git config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tu@correo.com\"</code></pre>"
+            },
+            {
+              "type": "url",
+              "name": "Libro Pro Git",
+              "intro": "<p>Libro gratuito y oficial de Git.</p>",
+              "externalurl": "https://git-scm.com/book/es/v2"
+            },
+            {
+              "type": "forum",
+              "name": "Foro de dudas",
+              "intro": "<p>Preguntas sobre Git y GitHub.</p>",
+              "discussion": {
+                "subject": "Comparte tu perfil de GitHub",
+                "message": "<p>Dejen el enlace a su perfil de GitHub para seguirnos entre todos.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Comandos básicos",
+          "summary": "<p>init, add, commit, status y log.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Flujo básico",
+              "intro": "<p>Los comandos del día a día.</p>",
+              "content": "<pre><code>git init\ngit add .\ngit commit -m \"Primer commit\"\ngit log --oneline</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Ramas y fusiones",
+          "summary": "<p>branch, switch, merge y resolución de conflictos.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Trabajo con ramas",
+              "intro": "<p>Desarrollo en paralelo.</p>",
+              "content": "<pre><code>git switch -c feature/login\n# ...cambios...\ngit commit -am \"Agrega login\"\ngit switch main\ngit merge feature/login</code></pre>"
+            },
+            {
+              "type": "assign",
+              "name": "Ejercicio: tu primer pull request",
+              "intro": "<p>Haz un fork del repositorio de práctica, crea una rama, realiza un cambio y abre un pull request. Entrega el enlace al PR.</p>",
+              "duedays": 10
+            }
+          ]
+        },
+        {
+          "name": "Colaboración en GitHub",
+          "summary": "<p>Remotos, pull requests, issues y revisiones.</p>",
+          "activities": [
+            {
+              "type": "page",
+              "name": "Remotos y pull requests",
+              "intro": "<p>Trabajo en equipo.</p>",
+              "content": "<pre><code>git remote add origin https://github.com/usuario/repo.git\ngit push -u origin main\ngit pull --rebase</code></pre>"
+            }
+          ]
+        },
+        {
+          "name": "Evaluación",
+          "summary": "<p>Comprueba lo aprendido.</p>",
+          "activities": [
+            {
+              "type": "quiz",
+              "name": "Cuestionario: Git y GitHub",
+              "intro": "<p>Responde verdadero o falso.</p>",
+              "questions": [
+                {
+                  "text": "<code>git commit</code> envía los cambios al repositorio remoto.",
+                  "answer": false,
+                  "feedback": "Eso lo hace <code>git push</code>; commit guarda en el repositorio local."
+                },
+                {
+                  "text": "Una rama en Git es un puntero ligero a un commit.",
+                  "answer": true,
+                  "feedback": "Correcto."
+                },
+                {
+                  "text": "Un pull request es una funcionalidad del propio Git.",
+                  "answer": false,
+                  "feedback": "Es una funcionalidad de plataformas como GitHub o GitLab."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "webservice": {
+    "user": {
+      "username": "ws_integracion",
+      "password": "Servicio#2026",
+      "firstname": "Servicio",
+      "lastname": "Integración",
+      "email": "ws_integracion@example.com"
+    },
+    "service_name": "Servicio Demo (moodle-dev)",
+    "service_shortname": "moodle_dev_demo",
+    "default_token": "0123456789abcdef0123456789abcdef",
+    "functions": [
+      "core_webservice_get_site_info",
+      "core_user_get_users",
+      "core_user_get_users_by_field",
+      "core_user_create_users",
+      "core_user_update_users",
+      "core_course_get_categories",
+      "core_course_get_courses",
+      "core_course_get_courses_by_field",
+      "core_course_get_contents",
+      "core_course_create_courses",
+      "core_enrol_get_enrolled_users",
+      "core_enrol_get_users_courses",
+      "enrol_manual_enrol_users",
+      "enrol_manual_unenrol_users",
+      "core_role_assign_roles",
+      "core_group_get_course_groups",
+      "core_group_create_groups",
+      "mod_assign_get_assignments",
+      "mod_assign_get_submissions",
+      "mod_quiz_get_quizzes_by_courses",
+      "mod_forum_get_forums_by_courses",
+      "mod_forum_get_forum_discussions",
+      "gradereport_user_get_grade_items",
+      "core_grades_get_gradeitems",
+      "core_completion_get_activities_completion_status",
+      "core_calendar_get_calendar_events"
+    ]
+  }
+}

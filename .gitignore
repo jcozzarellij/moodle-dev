@@ -1,0 +1,10 @@
+.env
+docker-compose.override.yml
+backups/*
+!backups/.gitkeep
+plugins/*
+!plugins/README.md
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

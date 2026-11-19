@@ -1,0 +1,71 @@
+# Moodle 4.5 + PostgreSQL 17 para desarrollo local.
+# Configura puertos, versión y credenciales en .env (copia .env.example).
+services:
+  db:
+    image: postgres:${POSTGRES_VERSION:-17}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-moodle}
+      POSTGRES_USER: ${POSTGRES_USER:-moodle}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-moodle}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backups:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  moodle:
+    build:
+      context: .
+      args:
+        PHP_VERSION: ${PHP_VERSION:-8.3}
+        MOODLE_VERSION: ${MOODLE_VERSION:-v4.5.16}
+        MOODLE_LANGS: ${MOODLE_LANGS:-es}
+    image: moodle-dev:${MOODLE_VERSION:-v4.5.16}
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${MOODLE_PORT:-8080}:80"
+    environment:
+      MOODLE_WWWROOT: ${MOODLE_WWWROOT:-http://localhost:${MOODLE_PORT:-8080}}
+      MOODLE_SSLPROXY: ${MOODLE_SSLPROXY:-0}
+      MOODLE_DB_HOST: db
+      POSTGRES_DB: ${POSTGRES_DB:-moodle}
+      POSTGRES_USER: ${POSTGRES_USER:-moodle}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-moodle}
+      MOODLE_SITE_NAME: ${MOODLE_SITE_NAME:-Moodle Dev}
+      MOODLE_SITE_SHORTNAME: ${MOODLE_SITE_SHORTNAME:-moodledev}
+      MOODLE_ADMIN_USER: ${MOODLE_ADMIN_USER:-admin}
+      MOODLE_ADMIN_PASS: ${MOODLE_ADMIN_PASS:-Admin#2026}
+      MOODLE_ADMIN_EMAIL: ${MOODLE_ADMIN_EMAIL:-admin@example.com}
+      MOODLE_LANG: ${MOODLE_LANG:-es}
+      MOODLE_TIMEZONE: ${MOODLE_TIMEZONE:-America/Guayaquil}
+      MOODLE_DEBUG: ${MOODLE_DEBUG:-1}
+      MOODLE_WS_TOKEN: ${MOODLE_WS_TOKEN:-}
+      MOODLE_SMTP_HOST: ${MOODLE_SMTP_HOST:-}
+      MOODLE_SMTP_USER: ${MOODLE_SMTP_USER:-}
+      MOODLE_SMTP_PASS: ${MOODLE_SMTP_PASS:-}
+      MOODLE_SMTP_SECURE: ${MOODLE_SMTP_SECURE:-}
+      MOODLE_NOREPLY_ADDRESS: ${MOODLE_NOREPLY_ADDRESS:-noreply@example.com}
+      PHP_MEMORY_LIMIT: ${PHP_MEMORY_LIMIT:-512M}
+      PHP_UPLOAD_MAX_FILESIZE: ${PHP_UPLOAD_MAX_FILESIZE:-128M}
+      PHP_POST_MAX_SIZE: ${PHP_POST_MAX_SIZE:-128M}
+    volumes:
+      - moodledata:/var/www/moodledata
+      - ./seed:/opt/moodle-dev/seed:ro
+      - ./backups:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /tmp/moodle-dev-ready && curl -s -o /dev/null http://localhost/"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+      start_period: 15m
+
+volumes:
+  pgdata:
+  moodledata:

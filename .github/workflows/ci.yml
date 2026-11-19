@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    name: Levantar Moodle y verificar datos demo
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar .env
+        run: cp .env.example .env
+
+      - name: Construir y levantar
+        run: docker compose up -d --build
+
+      - name: Esperar a que Moodle esté listo
+        run: |
+          for i in $(seq 1 90); do
+            if docker compose logs moodle | grep -q "Moodle listo"; then
+              echo "Moodle listo tras ~$((i * 10)) s"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Moodle no arrancó a tiempo"; exit 1
+
+      - name: Página de login responde
+        run: curl -fsS -o /dev/null -w "HTTP %{http_code}\n" http://localhost:8080/login/index.php
+
+      - name: Verificar datos demo
+        run: docker compose exec -T -u www-data moodle php /opt/moodle-dev/seed/verify.php
+
+      - name: API REST con el token demo
+        run: |
+          curl -fsS "http://localhost:8080/webservice/rest/server.php?wstoken=0123456789abcdef0123456789abcdef&wsfunction=core_webservice_get_site_info&moodlewsrestformat=json" | tee site_info.json
+          grep -q '"username":"ws_integracion"' site_info.json
+
+      - name: Reiniciar conserva los datos
+        run: |
+          docker compose down
+          docker compose up -d
+          for i in $(seq 1 30); do
+            docker compose ps moodle --format '{{.Status}}' | grep -q '(healthy)' && break
+            sleep 5
+          done
+          docker compose logs moodle | grep -q "Datos demo ya cargados"
+          docker compose exec -T -u www-data moodle php /opt/moodle-dev/seed/verify.php
+
+      - name: Backup y restore
+        run: |
+          bash scripts/backup.sh ci
+          test -s backups/ci.tar.gz
+          bash scripts/restore.sh backups/ci.tar.gz -y
+          bash scripts/verify.sh
+
+      - name: Logs ante fallo
+        if: failure()
+        run: docker compose logs --tail=300

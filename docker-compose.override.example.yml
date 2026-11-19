@@ -1,0 +1,22 @@
+# Copia este archivo a docker-compose.override.yml (Docker Compose lo carga automáticamente).
+# Monta tus plugins desde ./plugins en la ruta que les corresponde dentro de Moodle.
+# Después de añadir o cambiar un plugin: docker compose up -d  y  scripts/upgrade(.sh|.ps1)
+#
+# Rutas habituales según el tipo de plugin:
+#   local_xxx  -> /var/www/html/local/xxx        mod_xxx    -> /var/www/html/mod/xxx
+#   block_xxx  -> /var/www/html/blocks/xxx       auth_xxx   -> /var/www/html/auth/xxx
+#   enrol_xxx  -> /var/www/html/enrol/xxx        theme_xxx  -> /var/www/html/theme/xxx
+#   report_xxx -> /var/www/html/report/xxx       tool_xxx   -> /var/www/html/admin/tool/xxx
+#   qtype_xxx  -> /var/www/html/question/type/xxx  filter_xxx -> /var/www/html/filter/xxx
+
+services:
+  moodle:
+    volumes:
+      - ./plugins/local_miplugin:/var/www/html/local/miplugin
+      # - ./plugins/mod_miactividad:/var/www/html/mod/miactividad
+      # - ./plugins/block_mibloque:/var/www/html/blocks/mibloque
+
+  # Opcional: exponer PostgreSQL para conectarte con DBeaver, pgAdmin, etc.
+  # db:
+  #   ports:
+  #     - "5433:5432"
